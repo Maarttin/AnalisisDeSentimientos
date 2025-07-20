@@ -1,6 +1,6 @@
 <form (submit)="analyzeSentiment()">
-  <h1><strong>Análisis de sentimientos</strong></h1>
-  <textarea name="text" [(ngModel)]="text" placeholder="Escribe algo..."></textarea>
+<h1 style="font-size: 2rem;"><strong>Análisis de sentimientos</strong></h1>
+<textarea name="text" [(ngModel)]="text" placeholder="Escribe una reseña..." style=" border: 2px solid #007BFF; border-radius: 5px; width: 80%; height: 20rem;"></textarea>
   <div class="ejemplo-botón-fila">
     <button  matButton="filled" type="submit">Analizar</button>
 <button matButton="filled" type="button" (click)="clearForm()" [disabled]="!text && !result">
