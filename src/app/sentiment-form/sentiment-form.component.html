@@ -1,0 +1,16 @@
+<form (submit)="analyzeSentiment()">
+  <h1><strong>Análisis de sentimientos</strong></h1>
+  <textarea name="text" [(ngModel)]="text" placeholder="Escribe algo..."></textarea>
+  <div class="ejemplo-botón-fila">
+    <button  matButton="filled" type="submit">Analizar</button>
+<button matButton="filled" type="button" (click)="clearForm()" [disabled]="!text && !result">
+  Limpiar todo
+</button>
+
+
+
+  </div>
+
+</form>
+
+<p *ngIf="result">Resultado: {{ result }}</p>
